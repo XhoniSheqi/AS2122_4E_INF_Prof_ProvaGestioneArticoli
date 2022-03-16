@@ -25,6 +25,18 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
         // TODO: (6) aggiungere property di sola lettura dei dati inseriti nella frmArticoli per l'utilizzo in frmMain
         // ...
+        public string GetDescrizione
+        {
+            get { return descrizione; }
+        }
+        public string GetUnitaMisura
+        {
+            get { return unitaMisura; }
+        }
+        public double GetPrezzo
+        {
+            get { return prezzo; }
+        }
         public frmArticolo()
         {
             InitializeComponent();
@@ -35,7 +47,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             // TODO: (7) passaggio all' attributo/property dei dati inseriti nella frmArticoli con controllo di valorizzazione del dato
             // ... descrizione, unitaMisura, prezzo
 
-
+            
 
             status = DialogResult.OK;
             Close();
