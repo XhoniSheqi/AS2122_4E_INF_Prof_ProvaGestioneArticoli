@@ -47,6 +47,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
                 case "Visualizza articoli":
                     // TODO: (2) aggiungere visualizzazione articoli inseriti nella listbox
                     // ... lstElenco.Items.Add(a.Visualizzati()); 
+                    
                     break;
             }
         }
