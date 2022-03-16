@@ -49,7 +49,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
             this.descrizione = txtDescrizione.Text;
             this.unitaMisura = cmbUnitaMisura.Text;
-            this.prezzo = txtPrezzo.Text;
+            this.prezzo = txtPrezzo.Text; // errore
 
             status = DialogResult.OK;
             Close();
