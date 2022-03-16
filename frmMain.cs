@@ -26,7 +26,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
         private void btnAggiungiArticolo_Click(object sender, EventArgs e)
         {
             frmArticolo f = new frmArticolo();
-            Articolo a = new Articolo;
+            Articolo a = new Articolo(f.GetDescrizione , f.GetPrezzo , f.GetUnitaMisura , a.GetCodice);
 
 
             f.ShowDialog();
@@ -36,7 +36,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
                 // aggiungi l'articolo all'elenco di articoli
                 // TODO: (1) aggiungere l'articolo creato dai dati di frmArticoli nella lista articoli
                 // ...
-                articoli.Add(a); // errore
+                articoli.Add(a);
                 lblArticoliInseriti.Text = $"Articoli ({articoli.Count})";
             }
         }
