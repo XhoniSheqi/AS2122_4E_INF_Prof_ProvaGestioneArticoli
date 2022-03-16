@@ -27,6 +27,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
         {
             frmArticolo f = new frmArticolo();
 
+
             f.ShowDialog();
 
             if (f.Status == DialogResult.OK)
@@ -47,7 +48,10 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
                 case "Visualizza articoli":
                     // TODO: (2) aggiungere visualizzazione articoli inseriti nella listbox
                     // ... lstElenco.Items.Add(a.Visualizzati()); 
-                    
+                    foreach(Articolo articolo in articoli)
+                    {
+                        lstElenco.Items.Add(articolo.Visualizzati());
+                    }
                     
                     break;
             }
