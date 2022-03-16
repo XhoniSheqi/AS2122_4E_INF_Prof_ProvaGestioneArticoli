@@ -47,7 +47,9 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             // TODO: (7) passaggio all' attributo/property dei dati inseriti nella frmArticoli con controllo di valorizzazione del dato
             // ... descrizione, unitaMisura, prezzo
 
-            
+            this.descrizione = txtDescrizione.Text;
+            this.unitaMisura = cmbUnitaMisura.Text;
+            this.prezzo = txtPrezzo.Text;
 
             status = DialogResult.OK;
             Close();
